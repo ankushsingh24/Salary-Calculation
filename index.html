@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Salary Calculation</title>
-    <script src="script/controller.js"></script>
     <script src="script/model.js"></script>
+    <!-- <script src="script/controller.js" defer></script> -->
+    <script src="script/controller.js"></script>
   </head>
 
   <body>
@@ -14,16 +15,16 @@
     <label for="">Basic Salary</label>
     <input id="salary" type="text" placeholder="Type Basic Salary Here" />
     <br />
-    <button onclick="compute()">Compute</button>
+    <button id="compute"">Compute</button>
     <br />
-    <fieldset>
+    <fieldset id="output">
       <legend>Allowances</legend>
-      <p>HRA is <span id="hra"></span></p>
+      <!-- <p>HRA is <span id="hra"></span></p>
       <p>DA is <span id="da"></span></p>
       <p>TA is <span id="ta"></span></p>
       <p>MA is <span id="ma"></span></p>
       <p>GS is <span id="gs"></span></p>
-      <p>NS is <span id="ns"></span></p>
+      <p>NS is <span id="ns"></span></p> -->
     </fieldset>
   </body>
 </html>
