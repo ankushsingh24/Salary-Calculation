@@ -5,11 +5,11 @@ function bindEvents() {
 
 function compute() {
   let BasicSalary = document.getElementById("salary").value;
-  salaryOperations.BasicSalary = BasicSalary;
+  salaryOperations.BasicSalary = parseInt(BasicSalary);
   // BasicSalary = parseInt(BasicSalary);
 
   for (let key in salaryOperations) {
-    if (key == "BasicSalary") {
+    if (key == "BasicSalary" || key == "TAX") {
       continue;
     }
     document
