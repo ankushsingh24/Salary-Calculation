@@ -1,5 +1,7 @@
 const salaryOperations = {
   BasicSalary: 0,
+  //HRA:function(){}
+
   HRA() {
     return this.BasicSalary * 0.5;
   },
@@ -13,10 +15,10 @@ const salaryOperations = {
     return this.BasicSalary * 0.6;
   },
   GS() {
-    return BasicSalary + this.HRA() + this.DA() + this.TA() + this.MA();
+    return this.BasicSalary + this.HRA() + this.DA() + this.TA() + this.MA();
   },
   TAX() {
-    return (BasicSalary * 10) / 100;
+    return (this.BasicSalary * 10) / 100;
   },
   NS() {
     return this.GS() - this.TAX();
